@@ -74,7 +74,7 @@ module come(a,b,bin,diff,borr);
 input a,b,bin;
 output diff,borr;
 assign diff=(a^b^bin);
-assign borr=((~a&b)|((~a^b)&bin));
+assign borr=((~a&b)|((~(a^b))&bin));
 endmodule
 ```
 Developed by:khamalraaj S
